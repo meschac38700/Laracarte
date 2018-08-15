@@ -10,18 +10,18 @@
 
                 <form action="{{ route('laracarte.contact') }}" method="POST">
                     {{ csrf_field() }}
-                    <div class="form-group">
-                        <label for="name" class="form-label">Name</label>
+                    <div class="form-group {{ empty($errors->first('name'))? '': 'has-error'}}">
+                        <label for="name" class="control-label">Name</label>
                         <input required="required" type="text" id="name" name="name" class="form-control">
                         {!!$errors->first('name', '<span class="text-danger">:message</span>')!!}
                     </div>
-                    <div class="form-group">
-                        <label for="email" class="form-label">Email</label>
+                    <div class="form-group {{ empty($errors->first('email'))? '': 'has-error'}}">
+                        <label for="email" class="control-label">Email</label>
                         <input required="required" type="email" id="email" name="email" class="form-control">
                         {!!$errors->first('email', '<span class="text-danger">:message</span>')!!}
                     </div>
-                    <div class="form-group">
-                        <label for="message" class="form-label sr-only">Message</label>
+                    <div class="form-group {{ empty($errors->first('message'))? '': 'has-error'}}">
+                        <label for="message" class="control-label sr-only">Message</label>
                         <textarea rows=10 required="required" type="text" id="message" name="message" class="form-control"></textarea>
                         {!!$errors->first('message', '<span class="text-danger">:message</span>')!!}
                     </div>
