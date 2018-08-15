@@ -21,7 +21,7 @@
 
 	<footer class="text-center">
 		@yield('footer')
-		<p>&copy; {{ date('Y') }} · Laracarte by <a target="_blank" href="https://twitter.com/etsmo">@etsmo</a> - A <a target="_blank" href="https://laramap.com">Laramap</a> clone app.</p>
+		<p>&copy; {{ date('Y') }} · {{config('app.name')}} by <a target="_blank" href="https://twitter.com/etsmo">@etsmo</a> - A <a target="_blank" href="https://laramap.com">Laramap</a> clone app.</p>
 		<p><strong>This app has been built for learning purposes.</strong></p>
 		
 	</footer >
