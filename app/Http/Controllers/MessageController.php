@@ -45,7 +45,7 @@ class MessageController extends Controller
         // instance of mailable class
         $mailable = new ContactMessageCreated($name, $email, $msg);
         
-        $to = 'eliam38700@gmail.com';
+        $to = 'e.m.lotonga@gmail.com';
         //send the email
         Mail::to($to)->send( $mailable);
         //display a flashy message to confirm mail send
