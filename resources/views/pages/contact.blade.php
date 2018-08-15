@@ -1,5 +1,4 @@
-@extends('layouts.master')
-@section('title', 'Contact')
+@extends('layouts.master', ['title'=>'Contact'])
 
 @section('content')
 

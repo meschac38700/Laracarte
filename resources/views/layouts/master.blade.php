@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>@yield('title') | Laracarte - List of artisans</title>
+	<title> {{ App\Helpers\FormatString::formatTitle( $title ??  null ) }}</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Latest compiled and minified CSS -->
