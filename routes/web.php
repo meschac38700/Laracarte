@@ -11,6 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::name("laracarte.home")->get('/', 'LaracarteController@home');
+Route::name('laracarte.about')->get('/about', "LaracarteController@about");
+Route::name('laracarte.artisans')->get('/artisans', "LaracarteController@artisans");
+Route::name('laracarte.contact')->get('/contact', "LaracarteController@contact");

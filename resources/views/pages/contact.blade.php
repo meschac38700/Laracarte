@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('title', 'Contact | Laracarte - List of artisans')
+@section('title', 'Contact')
 
 @section('content')
 

@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('title', 'Laracarte - Home')
+@section('title', 'Home')
 
 @section('content')
     <div class="container text-center">

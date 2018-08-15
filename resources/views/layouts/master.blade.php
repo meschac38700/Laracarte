@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>@yield('title')</title>
+	<title>@yield('title') | Laracarte - List of artisans</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Latest compiled and minified CSS -->
@@ -9,7 +9,9 @@
 
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-	
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+	<link rel="stylesheet" href="{{asset('/css/app.css')}}">
 	@stack('scripts_header')
 </head>
 <body>
@@ -19,7 +21,7 @@
 
 	<footer class="text-center">
 		@yield('footer')
-		<p>&copy; {{ date('Y') }} · Laracarte by <a href="https://twitter.com/etsmo">@etsmo</a> - A <a href="https://laramap.com">Laramap</a> clone app.</p>
+		<p>&copy; {{ date('Y') }} · Laracarte by <a target="_blank" href="https://twitter.com/etsmo">@etsmo</a> - A <a target="_blank" href="https://laramap.com">Laramap</a> clone app.</p>
 		<p><strong>This app has been built for learning purposes.</strong></p>
 		
 	</footer >

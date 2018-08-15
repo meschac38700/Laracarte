@@ -8,13 +8,13 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">Laracarte</a>
+    <a class="navbar-brand" href="{{ route('laracarte.home')}}">Laracarte</a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Artisans</a></li>
+            <li class="active"><a href="{{ route('laracarte.home') }}">Home</a></li>
+            <li><a href="{{ route('laracarte.about')}}">About</a></li>
+            <li><a href="{{ route('laracarte.artisans')}}">Artisans</a></li>
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Planet <span class="caret"></span></a>
                 <ul class="dropdown-menu">
@@ -26,7 +26,7 @@
                     <li><a target="_blank" href="https://larachat.co/">Larachat</a></li>
                 </ul>
             </li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="{{ route('laracarte.contact')}}">Contact</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
             <li><a href="#contact">Login</a></li>
