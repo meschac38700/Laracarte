@@ -18,7 +18,7 @@
 	@include('layouts.partials._nav')
 	
 	@yield('content')
-
+	
 	<footer class="text-center">
 		@yield('footer')
 		<p>&copy; {{ date('Y') }} · {{config('app.name')}} by <a target="_blank" href="https://twitter.com/etsmo">@etsmo</a> - A <a target="_blank" href="https://laramap.com">Laramap</a> clone app.</p>
@@ -28,6 +28,7 @@
 	@stack('scripts_footer')
 	{{-- Jquery min => // == dynamique protocole http|https  --}}
 	<script src="//code.jquery.com/jquery.min.js"></script>
+	@include('flashy::message')
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>

@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Requests\MessageFormRequest;
+use MercurySeries\Flashy\Flashy;
 
 class MessageController extends Controller
 {
@@ -32,9 +34,11 @@ class MessageController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(MessageFormRequest $request)
     {
-        //
+        
+        Flashy::message('Message send !');
+        return redirect()->route('laracarte.home');
     }
 
     /**
