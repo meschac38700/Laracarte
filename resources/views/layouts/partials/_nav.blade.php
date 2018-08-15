@@ -12,9 +12,9 @@
     </div>
     <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
-            <li class="active"><a href="{{ route('laracarte.home') }}">Home</a></li>
-            <li><a href="{{ route('laracarte.about')}}">About</a></li>
-            <li><a href="{{ route('laracarte.artisans')}}">Artisans</a></li>
+            <li class="{{ App\Helpers\PageUtilities::activePage('Home', $title )}}"><a href="{{ route('laracarte.home') }}">Home</a></li>
+            <li class="{{ App\Helpers\PageUtilities::activePage('About', $title )}}"><a href="{{ route('laracarte.about')}}">About</a></li>
+            <li class="{{ App\Helpers\PageUtilities::activePage('Artisans', $title )}}"><a href="{{ route('laracarte.artisans')}}">Artisans</a></li>
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Planet <span class="caret"></span></a>
                 <ul class="dropdown-menu">
@@ -26,11 +26,11 @@
                     <li><a target="_blank" href="https://larachat.co/">Larachat</a></li>
                 </ul>
             </li>
-            <li><a href="{{ route('laracarte.contact')}}">Contact</a></li>
+            <li class="{{ App\Helpers\PageUtilities::activePage('Contact', $title )}}"><a href="{{ route('laracarte.contact')}}">Contact</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-            <li><a href="#contact">Login</a></li>
-            <li><a href="#contact">Register</a></li>
+            <li class="{{ App\Helpers\PageUtilities::activePage('Login', $title )}}"><a href="#contact">Login</a></li>
+            <li class="{{ App\Helpers\PageUtilities::activePage('Register', $title )}}"><a href="#contact">Register</a></li>
         </ul>
     </div><!--/.nav-collapse -->
     </div>
