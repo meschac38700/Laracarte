@@ -4,8 +4,8 @@ namespace App\Helpers;
 class PageUtilities
 {
 
-    public static function activePage( $page, $title )
+    public static function activePage( $route )
     {
-        return (strtolower($title) === strtolower($page) )? "active": "";
+        return \Route::is( strtolower($route) )? "active": "";
     }
 }
