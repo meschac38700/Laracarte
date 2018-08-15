@@ -12,17 +12,17 @@
                     {{ csrf_field() }}
                     <div class="form-group {{ empty($errors->first('name'))? '': 'has-error'}}">
                         <label for="name" class="control-label">Name</label>
-                        <input required="required" type="text" id="name" name="name" class="form-control">
+                    <input required="required" type="text" id="name" name="name" class="form-control" value="{{ old('name')}}">
                         {!!$errors->first('name', '<span class="text-danger">:message</span>')!!}
                     </div>
                     <div class="form-group {{ empty($errors->first('email'))? '': 'has-error'}}">
                         <label for="email" class="control-label">Email</label>
-                        <input required="required" type="email" id="email" name="email" class="form-control">
+                        <input required="required" type="email" id="email" name="email" class="form-control" value="{{ old('email')}}">
                         {!!$errors->first('email', '<span class="text-danger">:message</span>')!!}
                     </div>
                     <div class="form-group {{ empty($errors->first('message'))? '': 'has-error'}}">
                         <label for="message" class="control-label sr-only">Message</label>
-                        <textarea rows=10 required="required" type="text" id="message" name="message" class="form-control"></textarea>
+                        <textarea rows=10 required="required" type="text" id="message" name="message" class="form-control">{{ old('message')}}</textarea>
                         {!!$errors->first('message', '<span class="text-danger">:message</span>')!!}
                     </div>
                     <div class="form-group">
